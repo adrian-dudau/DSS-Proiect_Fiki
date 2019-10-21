@@ -8,70 +8,57 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 <style>
-
 /******************
     General
 *******************/
-
 body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html{
   height: 100%;
   color: rgb(65, 65, 65);
   line-height: 1.8;
 }
-
 p {
     text-align: justify;
     font-size: 1.2em;
 }
-
 .heading1 {
     font-size: 2em;
     font-weight: bold;
 }
-
 /******************
     Background
 *******************/
-
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .bgimg-1 {
   background-image: url("./resources/background_temp1.jpg");
   background-size: cover;
   min-height: 100%;
 }
-
 .bgimg-2 {
   background-image: url("./resources/background_temp2.jpg");
   min-height: 400px;
 }
-
 .bgimg-3 {
   background-image: url("./resources/background_temp3.jpg");
   min-height: 400px;
 }
-
 /******************
     Navigation
 *******************/
-
 .home-nav {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.5em;
     font-weight: bold;
 }
-
 .w3-top {
     font-size: 1.25em;
     color: white;
 }
-
 .w3-bar-item.w3-button:hover:after {
     content: "";
     display: block;
@@ -79,24 +66,19 @@ p {
     width: 75%;
     border-bottom: 1px rgb(118, 20, 230) solid !important;
 }
-
 .w3-bar-item.w3-button:hover {
     background-color: transparent !important;
     color: rgb(223, 223, 223) !important;
 }
-
 .rest-nav {
     margin-top: 0.5em;
 }
-
 /******************
     Home Section
 *******************/
-
 #home {
     font-size: 5em;
 }
-
 .w3-hover-opacity {cursor: pointer;}
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -104,13 +86,11 @@ p {
     min-height: 400px;
   }
 }
-
 ul {
     padding-left: 0;
     counter-reset: index;  
   /* max-width: 300px; */
 }
-
 /* List element */
 li {
   counter-increment: index; 
@@ -119,8 +99,6 @@ li {
   /* padding: 12px 0; */
   box-sizing: border-box;
 }
-
-
 /* Element counter */
 li::before {
   content: "■";
@@ -136,13 +114,10 @@ li::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
 /* Element separation */
 li + li {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
-
 /******************
     Competition Img
 *******************/
@@ -151,18 +126,15 @@ li + li {
   width: 20%;
   padding: 5px;
 }
-
 /* Clear floats after image containers */
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
 /******************
     Team
 *******************/
-
 /* body {
 	background: #262a2b;
 } */
@@ -202,7 +174,6 @@ li + li {
 	font-size: 20px;
 	margin-bottom: 5px;
 }
-
 .tilesWrap li button {
     font-weight: bold;
 	background: transparent;
@@ -246,7 +217,6 @@ li + li {
 	top: 0px;
 	opacity: 0.6;
 }
-
 .tilesWrap li:before {
 	content: '';
 	position: absolute;
@@ -272,8 +242,6 @@ li + li {
     background: -webkit-linear-gradient(to right, rgb(255, 0, 157), rgb(9, 0, 131));
     background: linear-gradient(to right, rgb(255, 0, 157), rgb(9, 0, 131));
 }
-
-
 </style>
 <body>
 
@@ -287,6 +255,7 @@ li + li {
     <a href="#contact" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Team </a>
     <a href="#portfolio" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Market </a>
     <a href="#about" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> About</a>
+    <a href="#validation" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Validation</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -294,6 +263,7 @@ li + li {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Market</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="#validation" class="w3-bar-item w3-button" onclick="toggleFunction()">Validation</a>
   </div>
 </div>
 
@@ -454,7 +424,7 @@ li + li {
             </li>
         </ul>
 
-
+        
   	<!-- <ul style="list-style-type:circle;">
   	 <li><a href="https://www.messenger.com/t/3212149735492325#"></a></li>
   	 <li><a href="https://www.messenger.com/t/3212149735492325#">Adrian Dudau</a></li>
@@ -465,6 +435,176 @@ li + li {
     </ul> -->
 
 </div>
+
+<div class="w3-content w3-container w3-padding-64" id="validation">
+    <!-- <p class="w3-center"><em>I love photography</em></p> -->
+    <h3 class="heading1">Validation</h3>
+
+    <h3>Synopsis</h3>
+    <p>The thought of spending too much time and money for finding something to wear (dress/smoking) has lead us to investigate a solution to benefit
+    those who meet this kind of problem. The proposed solution is to ask as many people as we can to check if the problem is real. If so, then
+    by implementing an application that will meet each requirement of each person's problem, then the proposed solution is good and we can continue
+    by developing our idea.</p>
+    <p>For testing the problem, each of us will take notes about how many clients are visiting a specific salon/store and how much time each client
+    is willing to spend.</p>
+    <p>For testing the solution, we will take a specific approach to make life easier for each of the client. For example, we will propose to clients
+    the nearest salons with their prices and the estimated time for their hairstyle/manicure. We will propose also the dresses/smokings that are
+    available at different stores with their prices.</p>
+    <p>In the end, we will establish if our solution met all the important requirements. If not, then we will take a different approach to develop our idea.</p>
+
+    <p class="heading1">1. How we identified the problem</p>
+
+    <h3>Personal experiences</h3>
+    <p>The formation of this idea first took birth by an internal realization upon reflecting on the prom nights we participated in previously. Having noticed the 
+    seemingly insurmentable amount of time that was spend searching for an outfit and comparing it to the actual time shops delivered a suitable option, we concluded 
+    that this situation is affecting our life quality in that particular period of the years. There were several factors that amplified the gravity of the 
+    discovered situation, the psychological aspect, which will be discussed below, and the pressure surrounding graduation time - time that could have been invested in 
+    preparation for either university Entry Exam and the national Bacalaureate Exam or delivering a presentation for the Bachelor's degree thesis was instead used to 
+    do all the necessary work to put together an outfit for the prom night. This includes looking for the actual outfit in several different stores, as well as verifying 
+    different salons and booking them accordingly.
+    </p>
+    <p>
+    We first took two details into consideration as a first contact with a sort of <em>validation</em> for our idea. The first issue refers to the large number of participants 
+    in the prom event, compared to the number of total graduates of that year. For highschool attendees, the percentage of prom-present students is higher than that of the 
+    university graduates, however the latter is not of a low quantity at all either. We made these assumptions based on the number of the students we found on graduation albums 
+    compared to the number of students we knew we had in class, as well checking the number of participants in social media groups such as Facebook or WhatsApp, esspecially 
+    created for discussing prom-participating issues. The second issue refers to the popularity of the problem among the media which we noticed every year, around the predefind prom period, 
+    by discovering news depicting the students sharing their struggles and effort in interviews for having found the perfect outfit (which is often overly glamorous and difficult to compose, 
+    time-wise as well as financially).
+    </p>
+
+
+    <h3>Psychological aspect</h3>
+
+    <p>Moreover, following the development of social media, an undeniable amount of pressure is put on the senior students to deliver impeccable presentation 
+    during the graduation party night. Online platforms (such as YouTube) flood the internet around the prom month with suggestions and tutorials regarding 
+    in order to create the desired effect, while online blogs showcase the latest fashion trends for the event. We identified these patterns by looking at the 
+    May and June issues of some of the most popular online blogs, as well as videos from reputable sources of inspiration on the platform Youtube, around the same 
+    months. Titles such as 'How to dress for prom', 'Makeup for prom', 'The perfect prom outfit', etc. being the most popular.
+    </p>
+
+    <p class="heading1">2. What we considered a solution for the problem</p>
+
+    <p>
+    What we initially figured could be a solution for the above mentioned problem is an application that offers suggestions of dress stores, hairstyles and makeup for prom, 
+    based upon user issues chosen at entry, such as keywords or patterns. Moreover, there should be a list of salons the user could make appointments to depending on availability periods, the application 
+    being able to send messages to book a spot at one of those, based on user preferences. There should also be a way of tracking the items per educational institution, so that 
+    we can make sure if the item is already purchased by someone in the respective environment, there will not be two identical suggestions to avoid a later conflict. Moreover, since the 
+    prom outfits are so pompous and worn only once, we could have an advertising system for sellers on the platform.
+    </p>
+
+    <p>
+    Moreover, this solution also provides confort from a psychological perspective. Knowing the high presence of anxiety among teenagers and young adults manifesting when 
+    having to make an appointment to a salon or directly interact with store employees. The app would thus also eliminate the pressure of the salesperson to purchase an undesired item 
+    sparing the user from undesired budget consumation.
+    </p>
+
+    <p class="heading1">3. Plan for customer discovery</p>
+    <p>
+    In order to make sure this solution proves sufficiently fruitful for its potential users, a study should be done, addressing two main customer segments: the graduates and the partners.
+    Reaching the first cathegory is to be done by proximity. We will contact large groups of prom participants as well as colleagues and ex colleagues whose presence we could confirm at the prom night.
+    They will be asked to complete a questionnaire without being aware of the actual solution we intend to construct, so that accidental dishonenesty is avoided.
+    Reaching the second cathegory is to be done by forming a list of salons and stores that could benefit from being partners to this application and contacting them in order to verify through 
+    our questionnaire if tackling of the addressed issue is beneficial for them.</p>
+
+    <p class="heading1">4. Process description in detail</p>
+	
+	<p>Finding the possible customers of our application was pretty straight forward, taking into consideration the final aim of PromBox : helping young people organize celebrations and special events, and most of all, their prom night. Therefore, the main customer segment consists in the young generation with ages between 20-25 who recently participated at their Bachelor Graduation Prom. Younger people, with ages between 18-20 were also taken into consideration due to the well known custom of having a prom for High School Graduation. The segment of customers with ages between 20 and 30 years old is also a very interesting one, since this is the time in our lives in which we attend most weddings and other kind of special events that need a lot of organization.</p>
+	<p>Thanks to the fact that all our team members are fresh graduates and we all attended Graduation Prom last year, we were part of different groups on social media (whats app and most of all facebook), which gave us the opportunity to share a research form with our former colleagues. Furthermore, each of us shared the form with close friends, acquaintances and old high school friends, which expanded our radius and we managed to collect a total of 90 replies (samples for our research study).</p>
+	<p>The form questions aim to identify how difficult was for the youngsters to organize all the details for a perfect prom night and to establish if this represents indeed a problem for the target customers, helping us to determine if the business idea is worthed. We asked how much time did it took to find the perfect outfit, the salon and means of transport. The results show that the main concern of the young generation was finding the outfit and more than a half considered they spent a considerable amount of time. At the question of which are the biggest problems in managing the prom preparations, our candidates identified again the outfit, but they added the hairdressing, the make up, the salon appointments, the search for the perfect pair of shoes. We moved on by asking if they encountered this kind of problems in other situations before and more than 80% had a positive answer, telling us that they felt the same with other kind of events such as weddings, baptisms and parties. Finally the candidates flagged WhatsUp, Facebook and Messenger as the main means of communication for the category of events that we brought up in discussion.</p>
+	<p>The team has also tried to reach possible partners for our business and find out more about what are they thinking regarding our application. We composed a second form especially for salons, dresses and suits vendors, shoes vendors, make up vendors and identified 60 targets, obtaining their email address during a research. However out of 60, only 3 shops replied, which is not a enough to be considered as a sample. The next possible step could be to approach them in person, if the application keeps being worthed further on our path.</p>
+
+  <h1 class="heading1">Graduates questionnaire and responses</h1>
+  <div class="row">
+      <img src="./resources/graduates1.jpg" alt="GradQ1">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates2.jpg" alt="GradQ2">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates3.jpg" alt="GradQ3">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates4.jpg" alt="GradQ4">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates5.jpg" alt="GradQ5">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates6.jpg" alt="GradQ6">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates7.jpg" alt="GradQ7">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates8.jpg" alt="GradQ8">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates9.jpg" alt="GradQ9">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates10.jpg" alt="GradQ10">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates11.jpg" alt="GradQ11">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates12.jpg" alt="GradQ12">
+  </div>
+  <div class="row">
+      <img src="./resources/graduates13.jpg" alt="GradQ13">
+  </div>
+
+  <br><br><br>
+
+  <h1 class="heading1">Partner questionnaire and responses</h1>
+  <div class="row">
+      <img src="./resources/partners1.jpg" alt="PartQ1">
+  </div>
+  <div class="row">
+      <img src="./resources/partners2.jpg" alt="PartQ2">
+  </div>
+  <div class="row">
+      <img src="./resources/partners3.jpg" alt="PartQ3">
+  </div>
+  <div class="row">
+      <img src="./resources/partners4.jpg" alt="PartQ4">
+  </div>
+  <div class="row">
+      <img src="./resources/partners5.jpg" alt="PartQ5">
+  </div>
+  <div class="row">
+      <img src="./resources/partners6.jpg" alt="PartQ6">
+  </div>
+  <div class="row">
+      <img src="./resources/partners7.jpg" alt="PartQ7">
+  </div>
+  <div class="row">
+      <img src="./resources/partners8.jpg" alt="PartQ8">
+  </div>
+  <div class="row">
+      <img src="./resources/partners9.jpg" alt="PartQ9">
+  </div>
+  <div class="row">
+      <img src="./resources/partners10.jpg" alt="PartQ10">
+  </div>
+  <div class="row">
+      <img src="./resources/partners11.jpg" alt="PartQ11">
+  </div>
+
+  <p class="heading1">5. Insights affecting our product</p>
+	<p>We were extremely happy to discover the youngsters were so opened to our ideas, that they contributed to our research and filled the form and most of all that we actually identified a real problem that bothered so many people. It is our conclusion, after interpreting the results, that young people would enjoy a Prom Box application, with suggestions about the outfit, accessories and hairdressing.</p>
+	<p>We acknowledge that the main issue is the outfit and for the feminine part it is also very important the uniqueness of the Prom dress.Therefore we decided to create groups in our application that will help the participants of specific events diminish the number of collisions per outfit or color. If a person wants to keep her or his outfit secret, they should just upload a photo anonymously and make everyone else in the group aware that the outfit is already taken.</p>
+	<p>Moreover gathering together all the shops and vendors with party dresses and suits, in the same application should become our focus, since the main problem is the time spend in finding the outfit. The customers could shop for what they need online, place an order and not visit all the shops in town. This could save time, energy and what is even better could save you the regret. When you buy an outfit and a few days later you discover something better at a shop which you considered too far at the beginning, but you finally decide to visit, that is called regret.</p>
+	<p>Last but not least, we point out the possibility of growth that resides in the Prom Box idea, since most of our candidates indicated they would need such an application not only for Prom, but for other special events such as weddings and parties.</p>
+
+  <p class="heading1">6. Are we ready to move to the Customer Validation stage?</p>
+
+	<p>After analysing the results of the research, the next logical step would be designing a prototype application, taking into consideration our old ideas, together with our new findings. We consider that could take us a bit of time, but afterwards we could share the prototype with our closest friends and ask them to test the application. This is how we imagine the first round of customer validation.</p>
+
+
+  
+  </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black ">
