@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Banquet</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 <style>
+
 /******************
     General
 *******************/
@@ -33,23 +36,70 @@ div.desc {
   text-align: center;
 }
 
-body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h2,h3,h4,h5,h6 {font-family: "Rubik", sans-serif;}
 body, html{
   height: 100%;
-  color: rgb(65, 65, 65);
+  background-color: #FEEAE6;
+  color: #442C2E;
   line-height: 1.8;
 }
 p {
-    text-align: justify;
-    font-size: 1.2em;
+  text-align: justify;
+  font-size: 1.2em;
+  color: rgb(92, 92, 92);
 }
 .heading1 {
     font-size: 2em;
     font-weight: bold;
 }
+
+.w3-container {
+  background-color: rgb(255, 251, 250);
+  margin-top: 4em;
+  padding: 5em;
+}
+
+.container-cut {
+  clip-path: 
+    polygon(
+      0% 5%,     /* top left */
+      10% 0%,     /* top left */
+      100% 0%,    /* top right */
+      100% 0%,   /* top right */
+      100% 0%,  /* bottom right */
+      100% 100%,  /* bottom right */
+      100% 100%,   /* bottom left */
+      0 100%      /* bottom left */
+    );
+}
+
+.container2-cut {
+  clip-path: 
+    polygon(
+      0% 100px,     /* top left */
+      100px 0%,     /* top left */
+      100% 0%,    /* top right */
+      100% 0%,   /* top right */
+      100% 0%,  /* bottom right */
+      100% 100%,  /* bottom right */
+      100% 100%,   /* bottom left */
+      0 100%      /* bottom left */
+    );
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: rgb(131, 86, 86);
+}
+
+.milestone {
+  font-size: 12px;
+}
+
 /******************
     Background
 *******************/
+
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8 {
   background-attachment: fixed;
   background-position: center;
@@ -57,61 +107,64 @@ p {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("./resources/background_temp1.jpg");
+  background-color: #FEDBD0;
   background-size: cover;
   min-height: 100%;
 }
-.bgimg-2 {
-  background-image: url("./resources/background_temp2.jpg");
-  min-height: 400px;
-}
-.bgimg-3 {
-  background-image: url("./resources/background_temp3.jpg");
-  min-height: 400px;
-}
-.bgimg-4 {
-  background-image: url("./resources/background_temp4.jpg");
-  min-height: 400px;
-}
-.bgimg-5 {
-  background-image: url("./resources/background_temp5.jpg");
-  min-height: 400px;
-}
-.bgimg-6 {
-  background-image: url("./resources/background_temp6.jpg");
-  min-height: 400px;
-}
-.bgimg-7 {
-  background-image: url("./resources/background_temp7.jpg");
-  min-height: 400px;
-}
-.bgimg-8 {
-  background-image: url("./resources/Market_share_icon.jpg");
-  min-height: 400px;
-}
+
+
 /******************
     Navigation
 *******************/
+
 .home-nav {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 1.5em;
-    font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: -1;
 }
+
 .w3-top {
-    font-size: 1.25em;
-    color: white;
+  z-index:10;
+  background-color: #FEDBD0;
+  font-size: 1.25em;
+  color: #442C2E;
 }
-.w3-bar-item.w3-button:hover:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-    border-bottom: 1px rgb(118, 20, 230) solid !important;
+
+.w3-bar {
+  -moz-box-shadow:    inset 0 0 10px rgb(131, 86, 86);
+  -webkit-box-shadow: inset 0 0 10px rgb(224, 167, 166);
+  box-shadow:         inset 0 0 10px rgb(224, 167, 166);
 }
-.w3-bar-item.w3-button:hover {
-    background-color: transparent !important;
-    color: rgb(223, 223, 223) !important;
+
+.w3-card {
+  box-shadow: none !important;
 }
+
+.w3-white {
+  background-color: #FEDBD0 !important;
+}
+
+.navbar-item {
+  padding-top: 10px;
+  font-size: 1.25em;
+  color: #442C2E;
+}
+
+.navbar-item:hover, .navbar-item:active {
+  background-color: transparent !important;
+  color: #442C2E;
+}
+
+.navbar-item text {
+  font-size: 0.8em;
+  fill: #442C2E;
+}
+
+.navbar-item:hover circle, .navbar-item:active circle{
+  stroke: rgb(224, 167, 166);
+}
+
 .rest-nav {
     margin-top: 0.5em;
 }
@@ -131,44 +184,32 @@ p {
 ul {
     padding-left: 0;
     counter-reset: index;  
-  /* max-width: 300px; */
 }
-/* List element */
+
 li {
   counter-increment: index; 
   display: flex;
   align-items: center;
-  /* padding: 12px 0; */
+  color: rgb(92, 92, 92);
+  font-size: 14px;
   box-sizing: border-box;
 }
-/* Element counter */
-li::before {
-  content: "■";
-  font-size: 1.25rem;
-  text-align: right;
-  font-weight: bold;
-  min-width: 50px;
-  padding-right: 12px;
-  font-variant-numeric: tabular-nums;
-  align-self: flex-start;
-  background-image: linear-gradient(to bottom, rgb(255, 0, 157), rgb(255, 0, 157), rgb(9, 0, 131), rgb(9, 0, 131));
-  background-attachment: fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-/* Element separation */
-li + li {
-  border-top: 1px solid rgba(255,255,255,0.2);
-}
+
 /******************
     Competition Img
 *******************/
+
+.questionnaire-img {
+  width: 70%;
+  height: 70%;
+}
+
 .column {
   float: left;
   width: 20%;
   padding: 5px;
 }
-/* Clear floats after image containers */
+
 .row::after {
   content: "";
   clear: both;
@@ -183,186 +224,203 @@ li + li {
 /******************
     Team
 *******************/
-/* body {
-    background: #262a2b;
-} */
+
 .tilesWrap {
     padding: 0;
-    /* margin: 50px auto; */
     list-style: none;
     text-align: center;
 }
 .tilesWrap li {
     padding-left: 10px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     display: inline-block;
     width: 33.33%;
     min-width: 200px;
     max-width: 230px;
-    /* padding: 80px 20px 40px; */
     position: relative;
     vertical-align: top;
     margin: 10px;
-    /* font-family: 'helvetica', san-serif; */
-    min-height: 12.25vh;
-    background: #ffffff;
-    /* border: 1px solid #252727; */
+    min-height: 10vh;
+    background: #FEDBD0;
     text-align: left;
+    clip-path: 
+    polygon(
+      0% 20%,     /* top left */
+      10% 0%,     /* top left */
+      90% 0%,    /* top right */
+      100% 20%,   /* top right */
+      100% 80%,  /* bottom right */
+      90% 100%,  /* bottom right */
+      10% 100%,   /* bottom left */
+      0 80%      /* bottom left */
+    );
 }
 .tilesWrap li h2 {
-    font-size: 20px;
-    margin: 0;
-    position: absolute;
-    opacity: 0.8;
-    top: 60px;
-    right: 10px;
-    transition: all 0.3s ease-in-out;
+  color: #442C2E;
+  font-size: 14px;
+  margin: 0;
+  position: absolute;
+  opacity: 0.8;
+  top: 40px;
+  right: 10px;
 }
 .tilesWrap li h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
+  color: #442C2E;
+  font-size: 18px;
 }
-.tilesWrap li button {
-    font-weight: bold;
-    background: transparent;
-    border: 1px solid white;
-    padding: 5px 20px;
-    color: #b7b7b7;
-    border-radius: 3px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    transform: translateY(-40px);
-    opacity: 0;
-    cursor: pointer;
-    overflow: hidden;
+
+/******************
+    Further
+*******************/
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(92, 92, 92);
+  margin: 1em 0;
+  padding: 0;
 }
-.tilesWrap li button:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 120%;
-    background: #dadada;
-    top: 0;
-    opacity: 0;
-    left: -140px;
-    /* border-radius: 0 20px 20px 0; */
-    z-index: -1;
-    transition: all 0.3s ease-in-out;
-    
-}
-.tilesWrap li:hover button {
-    transform: translateY(5px);
-    opacity: 1;
-}
-.tilesWrap li button:hover {
-    color: #494949;
-}
-.tilesWrap li button:hover:before {
-    left: 0;
-    opacity: 1;
-}
-.tilesWrap li:hover h2 {
-    top: 0px;
-    opacity: 0.6;
-}
-.tilesWrap li:before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    z-index: -1;
-    background: #fff;
-    transform: skew(2deg, 2deg);
-}
-/* .tilesWrap li:after {
-    content: '';
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: rgb(255, 255, 255);
-} */
-.tilesWrap li:before {
-    background: rgb(255, 0, 157);
-    background: -webkit-linear-gradient(to right, rgb(255, 0, 157), rgb(9, 0, 131));
-    background: linear-gradient(to right, rgb(255, 0, 157), rgb(9, 0, 131));
-}
+
 </style>
+
 <body>
 
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="home-nav w3-bar-item w3-button">Prom Box</a>
-    <a href="#contact" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Team </a>
-    <a href="#portfolio" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Market </a>
-    <a href="#about" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> About</a>
-    <a href="#validation" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Validation</a>
-    <a href="#wireframe" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Wireframe & Landing Page</a>
+
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="home-nav w3-left w3-hide-medium w3-hide-small" style="display:block; margin: 0 auto;">
+        <svg width="140" height="54" class="navbar-item">
+          <a href="#home">
+            <circle cx="70"
+                    cy="23"
+                    r="15"
+                    stroke="transparent" stroke-width="5"
+                    fill="none"
+                    />
+          
+            <text x="70" y="25"
+                  text-anchor="middle"
+                  alignment-baseline="middle">
+              HOME
+            </text>
+          </a>
+        </svg>
+      </div>
+
+      <div class="rest-nav w3-right w3-hide-medium w3-hide-small" style="display:block; margin: 0 auto;">
+        <svg width="200" height="50" class="navbar-item">
+          <a href="#home">
+            <circle cx="100"
+                    cy="25"
+                    r="12"
+                    stroke="transparent" stroke-width="5"
+                    fill="none"
+                    />
+          
+            <text x="100" y="25"
+                  text-anchor="middle"
+                  alignment-baseline="middle">
+              BUILDING PROCESS
+            </text>
+          </a>
+        </svg>
+      </div>
+
+      <div class="rest-nav w3-right w3-hide-medium w3-hide-small" style="display:block; margin: 0 auto;">
+        <svg width="80" height="50" class="navbar-item">
+          <a href="#contact">
+            <circle cx="40"
+                    cy="25"
+                    r="12"
+                    stroke="transparent" stroke-width="5"
+                    fill="none"
+                    />
+          
+            <text x="40" y="25"
+                  text-anchor="middle"
+                  alignment-baseline="middle">
+              TEAM
+            </text>
+          </a>
+        </svg>
+      </div>
+
+      <div class="rest-nav w3-right w3-hide-medium w3-hide-small" style="display:block; margin: 0 auto;">
+        <svg width="80" height="50" class="navbar-item">
+          <a href="#about">
+            <circle cx="40"
+                    cy="25"
+                    r="12"
+                    stroke="transparent" stroke-width="5"
+                    fill="none"
+                    />
+          
+            <text x="40" y="25"
+                  text-anchor="middle"
+                  alignment-baseline="middle">
+              ABOUT
+            </text>
+          </a>
+        </svg>
+      </div>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Team</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Market</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-    <a href="#validation" class="w3-bar-item w3-button" onclick="toggleFunction()">Validation</a>
-    <a href="#wireframe" class="rest-nav w3-bar-item w3-button w3-right w3-hide-small"></i> Wireframe & Landing Page</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">TEAM</a>
+    <a href="#validation" class="w3-bar-item w3-button" onclick="toggleFunction()">BUILDING PROCESS</a>
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-animate-opacity">Prom <span class="w3-hide-small">Box</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <!-- <p class="w3-center"><em>I love photography</em></p> -->
+<div class="w3-content w3-container w3-padding-64 container-cut" id="about">
+  <p class="disclaimer"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+    Modified items appear with an exclamation mark similar to the one preceding this paragraph.
+  </p>
+
+  <p class="milestone">Milestone 1</p>
+
   <h3 class="heading1">The Problem</h3>
-  <p>The happiness and enthusiasm of attending the prom could be overshadowed by the stress of choosing the perfect outfit and hairstyle. If time management and decision making are not among your strongest qualities, but you still want the Prom Night to be unforgettable, then you might find yourself in a difficult position. What would be the model of the dress, the color of the nails, the right hairstyle, the appropriate height of the heels, an adequate means of transportation and most of all, when will you find the time to accommodate everything and make all these arrangements and appointments ?</p>
+    <p>The happiness and enthusiasm of attending the prom could be overshadowed by the stress of choosing the perfect outfit and hairstyle. If time management and decision making are not among your strongest qualities, but you still want the Prom Night to be unforgettable, then you might find yourself in a difficult position. What would be the model of the dress, the color of the nails, the right hairstyle, the appropriate height of the heels, an adequate means of transportation and most of all, when will you find the time to accommodate everything and make all these arrangements and appointments?
+      <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
+    </p>
 
-  <p class="heading1">Our Solution</p>
-  <p>A single App that will centralise all the needed information and provide the opportunity of handling your appointments in a time efficient way. The App’s feature set includes:</p>
-
+  <h3 class="heading1">Our Solution</h3>
+    <p>A single App that will centralise all the needed information and provide the opportunity of handling your appointments in a time efficient way. The App’s feature set includes:</p>
     <ul>
-        <li> showcase of multiple dress models</li>
-        <li> partnerships with dresses providers and possibility of purchasing the desired product through the app ( + delivery)</li>
-        <li> showcase of multiple hairstyles</li>
-        <li> showcase of multiple shoes models</li>
-        <li> a list of salons for manicure and hairstyle appointments</li>
-        <li> a list of transportation suggestions</li>
-        <li> the possibility of creating a group of friends to make sure there will not be two people with the same outfit</li>
-        <li> the possibility of providing a time frame and a list of favorites salons and getting all your appointments done automatically</li>
-        <li> facilitates renting a limousine</li>
-        <li> modern fashion suggestions</li>
-        <li> a simulator to see how the dress and the shoes would look together in different colors</li>
-</ul>
+      <li> 1. Showcase of multiple dress models</li>
+      <li> 2. Partnerships with dresses providers and possibility of purchasing the desired product through the app ( + delivery)</li>
+      <li> 3. Showcase of multiple hairstyles</li>
+      <li> 4. Showcase of multiple shoes models</li>
+      <li> 5. A list of salons for manicure and hairstyle appointments</li>
+      <li> 6. A list of transportation suggestions</li>
+      <li> 7. The possibility of creating a group of friends to make sure there will not be two people with the same outfit</li>
+      <li> 8. The possibility of providing a time frame and a list of favorites salons and getting all your appointments done automatically</li>
+      <li> 9. Facilitates renting a limousine</li>
+      <li> 10. Modern fashion suggestions</li>
+      <li> 11. A simulator to see how the dress and the shoes would look together in different colors</li>
+    </ul>
 
-</div>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Market</span>
-  </div>
-</div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <div class="heading1">Customer Segment</div>
-    <p>Mostly young graduates that will participate to their graduation Prom, with ages roughly covered between 22-25. If the app is a success it might get extended to Highschool Proms as well.
-</p>
+<!-- Customer Segment -->
+  <h3 class="heading1">Customer Segment</h3>
+    <p> Mostly young graduates that will participate to their graduation Prom, with ages roughly covered between 22-25. If the app is a success it might get extended to Highschool Proms as well.
+      <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
+    </p>
 
-  <div class="heading1">Competition</div>
+  <h3 class="heading1">Competition</h3>
 
   <div class="row">
     <div class="column">
@@ -375,119 +433,81 @@ li + li {
             <img src="./resources/mgnevents.jpg" alt="MgnEvents" style="height:20px, margin-top:30px">
         </a>
     </div>
+    <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
   </div>
 
-  <!-- <h3 class="w3-center">
-    <a href="https://apps.apple.com/us/app/promgirl-shop/id554362357">PromGirl</a>
-  </h3> -->
-
-    <div class="heading1">Our advantages</div>
+  <h3 class="heading1">Our advantages</h3>
 
   <ul>
-    <li> unique value on the market - little to no similar products are available on the market</li>
-    <li> team - all 6 of us have been through the experience of both highschool and university proms, so we know what people want and what the feedback has been</li>
-    <li> growth possibility by extending the app to handle other types of events as well or adding new features</li>
-    <li> solves a popular problem amongst a large percentage of the population</li>
+    <li>1. Unique value on the market - little to no similar products are available on the market</li>
+    <li>2. Team - all 6 of us have been through the experience of both highschool and university proms, so we know what people want and what the feedback has been</li>
+    <li>3. Growth possibility by extending the app to handle other types of events as well or adding new features</li>
+    <li>4. Solves a popular problem amongst a large percentage of the population</li>
   </ul>
+  <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
 
-  <div class="heading1">Key Metrics</div>
+
+  <h3 class="heading1">Key Metrics</h3>
 
 <ul>
-    <li> How many people download the application </li>
-    <li> How many salons signed contracts with us </li>
-    <li> How many dresses or shoes are sold through the application </li>
+    <li>1. How many people download the application? </li>
+    <li>2. How many salons signed contracts with us? </li>
+    <li>3. How many dresses or shoes are sold through the application? </li>
 </ul>
     
-<div class="heading1">Cost Structure</div>
+  <h3 class="heading1">Cost Structure</h3>
     
   <p> There are two types of costs: fixed costs and variable costs. At the beginning of our startup, there are no variable costs. As for fixed costs we can mention the following:</p>
     
   <ul>
-    <li>Bank charges</li>
-    <li>Application maintenance</li>
-    <li>Promotion and advertising of the app</li>
+    <li>1. Bank charges</li>
+    <li>2. Application maintenance</li>
+    <li>3. Promotion and advertising of the app</li>
   </ul>
     
-  <div class="heading1">Revenue streams</div>
+  <h3 class="heading1">Revenue streams</h3>
     
   <p> Our startup will gain its revenues from:</p>  
 
   <ul>
-      <li>Application downloads from google store or app store</li>
-      <li>Advertisements</li>
-      <li>Other partners such as salons, limo rentals and dress shops</li>
+      <li>1. Application downloads from google store or app store</li>
+      <li>2. Advertisements</li>
+      <li>3. Other partners such as salons, limusine rentals and dress shops</li>
   </ul>
+  <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
 
-</div>
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">Team</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
     <div class="heading1">Our Team</div>
 
     <ul class="tilesWrap">
             <li>
                 <h2>Product Manager</h2>
                 <h3>Andreea Dumitrache</h3>
-                <button>Report</button>
             </li>
             <li>
                 <h2>Product Owner</h2>
                 <h3>Violeta Amza</h3>
-                <button>Report</button>
             </li>
             <li>
                 <h2>Frontend Developer</h2>
                 <h3>Cristina Teodorescu</h3>
-                <button>Report</button>
             </li>
             <li>
                 <h2>Frontend Developer</h2>
                 <h3>Adrian Dudau</h3>
-                <button>Report</button>
             </li>
             <li>
                 <h2>Backend Developer</h2>
                 <h3>Radu Raluca</h3>
-                <button>Report</button>
             </li>
             <li>
                 <h2>Backend Developer</h2>
                 <h3>Anghel Calugareanu</h3>
-                <button>Report</button>
             </li>
         </ul>
-
-        
-    <!-- <ul style="list-style-type:circle;">
-     <li><a href="https://www.messenger.com/t/3212149735492325#"></a></li>
-     <li><a href="https://www.messenger.com/t/3212149735492325#">Adrian Dudau</a></li>
-     <li><a href="https://www.messenger.com/t/3212149735492325#">Anghel Calugareanu</a></li>
-     <li><a href="https://www.messenger.com/t/3212149735492325#">Cristina Teodorescu</a></li>
-     <li><a href="https://www.messenger.com/t/3212149735492325#">Radu Raluca</a></li>
-     <li><a href="https://www.messenger.com/t/3212149735492325#">Violeta Amza</a></li>
-    </ul> -->
-
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="validation">
-    <!-- <p class="w3-center"><em>I love photography</em></p> -->
+<div class="w3-content w3-container w3-padding-64 container2-cut" id="validation">
+    <p class="milestone">Milestone 2</p>
     <h3 class="heading1">Validation</h3>
 
     <h3>Synopsis</h3>
@@ -497,18 +517,18 @@ li + li {
     by developing our idea.</p>
     <p>For testing the problem, each of us will take notes about how many clients are visiting a specific salon/store and how much time each client
     is willing to spend.</p>
-    <p>For testing the solution, we will take a specific approach to make life easier for each of the client. For example, we will propose to clients
+    <p>For testing the solution, we will take a specific approach to make life easier for each of the clients. For example, we will propose to clients
     the nearest salons with their prices and the estimated time for their hairstyle/manicure. We will propose also the dresses/smokings that are
     available at different stores with their prices.</p>
     <p>In the end, we will establish if our solution met all the important requirements. If not, then we will take a different approach to develop our idea.</p>
 
-    <p class="heading1">1. How we identified the problem</p>
+    <h2>1. How we identified the problem</h2>
 
     <h3>Personal experiences</h3>
-    <p>The formation of this idea first took birth by an internal realization upon reflecting on the prom nights we participated in previously. Having noticed the 
+    <p>The formation of this idea first took birth by an internal realization upon reflecting on various event nights we participated in previously. Having noticed the 
     seemingly insurmentable amount of time that was spend searching for an outfit and comparing it to the actual time shops delivered a suitable option, we concluded 
     that this situation is affecting our life quality in that particular period of the years. There were several factors that amplified the gravity of the 
-    discovered situation, the psychological aspect, which will be discussed below, and the pressure surrounding graduation time - time that could have been invested in 
+    discovered situation, the psychological aspect, which will be discussed below, and the pressure surrounding events such as graduation time - time that could have been invested in 
     preparation for either university Entry Exam and the national Bacalaureate Exam or delivering a presentation for the Bachelor's degree thesis was instead used to 
     do all the necessary work to put together an outfit for the prom night. This includes looking for the actual outfit in several different stores, as well as verifying 
     different salons and booking them accordingly.
@@ -521,6 +541,7 @@ li + li {
     created for discussing prom-participating issues. The second issue refers to the popularity of the problem among the media which we noticed every year, around the predefind prom period, 
     by discovering news depicting the students sharing their struggles and effort in interviews for having found the perfect outfit (which is often overly glamorous and difficult to compose, 
     time-wise as well as financially).
+    <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
     </p>
 
 
@@ -531,9 +552,10 @@ li + li {
     in order to create the desired effect, while online blogs showcase the latest fashion trends for the event. We identified these patterns by looking at the 
     May and June issues of some of the most popular online blogs, as well as videos from reputable sources of inspiration on the platform Youtube, around the same 
     months. Titles such as 'How to dress for prom', 'Makeup for prom', 'The perfect prom outfit', etc. being the most popular.
+    <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
     </p>
 
-    <p class="heading1">2. What we considered a solution for the problem</p>
+    <h2>2. What we considered a solution for the problem</h2>
 
     <p>
     What we initially figured could be a solution for the above mentioned problem is an application that offers suggestions of dress stores, hairstyles and makeup for prom, 
@@ -547,131 +569,122 @@ li + li {
     Moreover, this solution also provides confort from a psychological perspective. Knowing the high presence of anxiety among teenagers and young adults manifesting when 
     having to make an appointment to a salon or directly interact with store employees. The app would thus also eliminate the pressure of the salesperson to purchase an undesired item 
     sparing the user from undesired budget consumation.
+    <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
     </p>
 
-    <p class="heading1">3. Plan for customer discovery</p>
+    <h2>3. Plan for customer discovery</h2>
     <p>
     In order to make sure this solution proves sufficiently fruitful for its potential users, a study should be done, addressing two main customer segments: the graduates and the partners.
     Reaching the first cathegory is to be done by proximity. We will contact large groups of prom participants as well as colleagues and ex colleagues whose presence we could confirm at the prom night.
     They will be asked to complete a questionnaire without being aware of the actual solution we intend to construct, so that accidental dishonenesty is avoided.
     Reaching the second cathegory is to be done by forming a list of salons and stores that could benefit from being partners to this application and contacting them in order to verify through 
-    our questionnaire if tackling of the addressed issue is beneficial for them.</p>
+    our questionnaire if tackling of the addressed issue is beneficial for them.
+    </p>
 
-    <p class="heading1">4. Process description in detail</p>
+    <h2>4. Process description in detail</h2>
     
     <p>Finding the possible customers of our application was pretty straight forward, taking into consideration the final aim of PromBox : helping young people organize celebrations and special events, and most of all, their prom night. Therefore, the main customer segment consists in the young generation with ages between 20-25 who recently participated at their Bachelor Graduation Prom. Younger people, with ages between 18-20 were also taken into consideration due to the well known custom of having a prom for High School Graduation. The segment of customers with ages between 20 and 30 years old is also a very interesting one, since this is the time in our lives in which we attend most weddings and other kind of special events that need a lot of organization.</p>
     <p>Thanks to the fact that all our team members are fresh graduates and we all attended Graduation Prom last year, we were part of different groups on social media (whats app and most of all facebook), which gave us the opportunity to share a research form with our former colleagues. Furthermore, each of us shared the form with close friends, acquaintances and old high school friends, which expanded our radius and we managed to collect a total of 90 replies (samples for our research study).</p>
     <p>The form questions aim to identify how difficult was for the youngsters to organize all the details for a perfect prom night and to establish if this represents indeed a problem for the target customers, helping us to determine if the business idea is worthed. We asked how much time did it took to find the perfect outfit, the salon and means of transport. The results show that the main concern of the young generation was finding the outfit and more than a half considered they spent a considerable amount of time. At the question of which are the biggest problems in managing the prom preparations, our candidates identified again the outfit, but they added the hairdressing, the make up, the salon appointments, the search for the perfect pair of shoes. We moved on by asking if they encountered this kind of problems in other situations before and more than 80% had a positive answer, telling us that they felt the same with other kind of events such as weddings, baptisms and parties. Finally the candidates flagged WhatsUp, Facebook and Messenger as the main means of communication for the category of events that we brought up in discussion.</p>
     <p>The team has also tried to reach possible partners for our business and find out more about what are they thinking regarding our application. We composed a second form especially for salons, dresses and suits vendors, shoes vendors, make up vendors and identified 60 targets, obtaining their email address during a research. However out of 60, only 3 shops replied, which is not a enough to be considered as a sample. The next possible step could be to approach them in person, if the application keeps being worthed further on our path.</p>
 
-  <h1 class="heading1">Graduates questionnaire and responses</h1>
+  <h2>Graduates questionnaire and responses</h1>
   <div class="row">
-      <img src="./resources/graduates1.JPG" alt="GradQ1">
+      <img src="./resources/graduates1.JPG" alt="GradQ1" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates2.JPG" alt="GradQ2">
+      <img src="./resources/graduates2.JPG" alt="GradQ2" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates3.JPG" alt="GradQ3">
+      <img src="./resources/graduates3.JPG" alt="GradQ3" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates4.JPG" alt="GradQ4">
+      <img src="./resources/graduates4.JPG" alt="GradQ4" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates5.JPG" alt="GradQ5">
+      <img src="./resources/graduates5.JPG" alt="GradQ5" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates6.JPG" alt="GradQ6">
+      <img src="./resources/graduates6.JPG" alt="GradQ6" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates7.JPG" alt="GradQ7">
+      <img src="./resources/graduates7.JPG" alt="GradQ7" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates8.JPG" alt="GradQ8">
+      <img src="./resources/graduates8.JPG" alt="GradQ8" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates9.JPG" alt="GradQ9">
+      <img src="./resources/graduates9.JPG" alt="GradQ9" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates10.JPG" alt="GradQ10">
+      <img src="./resources/graduates10.JPG" alt="GradQ10" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates11.JPG" alt="GradQ11">
+      <img src="./resources/graduates11.JPG" alt="GradQ11" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates12.JPG" alt="GradQ12">
+      <img src="./resources/graduates12.JPG" alt="GradQ12" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/graduates13.JPG" alt="GradQ13">
+      <img src="./resources/graduates13.JPG" alt="GradQ13" class="questionnaire-img">
   </div>
 
   <br><br><br>
 
-  <h1 class="heading1">Partner questionnaire and responses</h1>
+  <h2>Partner questionnaire and responses</h2>
   <div class="row">
-      <img src="./resources/partners1.JPG" alt="PartQ1">
-  </div>
-  <div class="row">
-      <img src="./resources/partners2.JPG" alt="PartQ2">
+      <img src="./resources/partners1.JPG" alt="PartQ1" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners3.JPG" alt="PartQ3">
+      <img src="./resources/partners2.JPG" alt="PartQ2" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners4.JPG" alt="PartQ4">
+      <img src="./resources/partners3.JPG" alt="PartQ3" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners5.JPG" alt="PartQ5">
+      <img src="./resources/partners4.JPG" alt="PartQ4" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners6.JPG" alt="PartQ6">
+      <img src="./resources/partners5.JPG" alt="PartQ5" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners7.JPG" alt="PartQ7">
+      <img src="./resources/partners6.JPG" alt="PartQ6" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners8.JPG" alt="PartQ8">
+      <img src="./resources/partners7.JPG" alt="PartQ7" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners9.JPG" alt="PartQ9">
+      <img src="./resources/partners8.JPG" alt="PartQ8" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners10.JPG" alt="PartQ10">
+      <img src="./resources/partners9.JPG" alt="PartQ9" class="questionnaire-img">
   </div>
   <div class="row">
-      <img src="./resources/partners11.JPG" alt="PartQ11">
+      <img src="./resources/partners10.JPG" alt="PartQ10" class="questionnaire-img">
   </div>
-
-  <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-4 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Insights</span>
+  <div class="row">
+      <img src="./resources/partners11.JPG" alt="PartQ11" class="questionnaire-img">
   </div>
-</div>
-
-  <p class="heading1">5. Insights affecting our product</p>
-    <p>We were extremely happy to discover the youngsters were so opened to our ideas, that they contributed to our research and filled the form and most of all that we actually identified a real problem that bothered so many people. It is our conclusion, after interpreting the results, that young people would enjoy a Prom Box application, with suggestions about the outfit, accessories and hairdressing.</p>
-    <p>We acknowledge that the main issue is the outfit and for the feminine part it is also very important the uniqueness of the Prom dress.Therefore we decided to create groups in our application that will help the participants of specific events diminish the number of collisions per outfit or color. If a person wants to keep her or his outfit secret, they should just upload a photo anonymously and make everyone else in the group aware that the outfit is already taken.</p>
-    <p>Moreover gathering together all the shops and vendors with party dresses and suits, in the same application should become our focus, since the main problem is the time spend in finding the outfit. The customers could shop for what they need online, place an order and not visit all the shops in town. This could save time, energy and what is even better could save you the regret. When you buy an outfit and a few days later you discover something better at a shop which you considered too far at the beginning, but you finally decide to visit, that is called regret.</p>
-    <p>Last but not least, we point out the possibility of growth that resides in the Prom Box idea, since most of our candidates indicated they would need such an application not only for Prom, but for other special events such as weddings and parties.</p>
-
-  <p class="heading1">6. Are we ready to move to the Customer Validation stage?</p>
-
-    <p>After analysing the results of the research, the next logical step would be designing a prototype application, taking into consideration our old ideas, together with our new findings. We consider that could take us a bit of time, but afterwards we could share the prototype with our closest friends and ask them to test the application. This is how we imagine the first round of customer validation.</p>
-
 
   
+
+  <h2>5. Insights affecting our product</h2>
+    <p>We were extremely happy to discover the youngsters were so opened to our ideas, that they contributed to our research and filled the form and most of all that we actually identified a real problem that bothered so many people. It is our conclusion, after interpreting the results, that young people would enjoy a Prom Box application, with suggestions about the outfit, accessories and hairdressing.</p>
+    <p>We acknowledge that the main issue is the outfit and for the feminine part it is also very important the uniqueness of the Prom dress. Therefore we decided to create groups in our application that will help the participants of specific events diminish the number of collisions per outfit or color. If a person wants to keep her or his outfit secret, they should just upload a photo anonymously and make everyone else in the group aware that the outfit is already taken.</p>
+    <p>Moreover gathering together all the shops and vendors with party dresses and suits, in the same application should become our focus, since the main problem is the time spend in finding the outfit. The customers could shop for what they need online, place an order and not visit all the shops in town. This could save time, energy and what is even better could save you the regret. When you buy an outfit and a few days later you discover something better at a shop which you considered too far at the beginning, but you finally decide to visit, that is called regret.</p>
+    <p>Last but not least, we point out the possibility of growth that resides in the Prom Box idea, since most of our candidates indicated they would need such an application not only for Prom, but for other special events such as weddings and parties.
+    <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
+    </p>
+
+  <h2>6. Are we ready to move to the Customer Validation stage?</h2>
+    <p>After analysing the results of the research, the next logical step would be designing a prototype application, taking into consideration our old ideas, together with our new findings. We consider that could take us a bit of time, but afterwards we could share the prototype with our closest friends and ask them to test the application. This is how we imagine the first round of customer validation.
+    <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
+    </p>
   </div>
 
-  <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-5 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Wireframe</span>
-  </div>
-</div>
 
-<div class="w3-content w3-container w3-padding-64" id="wireframe">
-  <!-- <p class="w3-center"><em>I love photography</em></p> -->
+<div class="w3-content w3-container w3-padding-64 container2-cut" id="wireframe">
+  <p class="milestone">Milestone 3</p>
   <h3 class="heading1">Wireframe</h3>
   <div class="row">
     <div class="column_wireframe">
@@ -727,89 +740,75 @@ li + li {
   <p><a href="https://cristinateodorescu25.github.io/PromBox/">Click</a> to navigate to landing page</p>
 </div>
 
-  <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-6 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Interviews</span>
-  </div>
-</div>
 
 
-<div class="w3-content w3-container w3-padding-64" id="wireframe">
-    <table  class="w3-table">
-        <!-- Aici e titlul/intrare pe linie in coloana -->
-      <tr>
-        <th>Parteneri</th>
-        <th>Clienti</th>
-      </tr>
-      <!-- linia 2 -->
-      <tr>
-        <td>
-            <audio controls>
-              <source src="resources_audio/parteneri_01.mp3" type="audio/mpeg">
-              Your browser does not support the audio tag.
-            </audio>
-        </td>
-        <td>
-            <audio controls>
-              <source src="resources_audio/studenti_01.mp3" type="audio/mpeg">
-              Your browser does not support the audio tag.
-            </audio>
-        </td>
-      </tr>
-      <!-- linia 3 -->
-      <tr>
-        <td>
-            <audio controls>
-              <source src="resources_audio/parteneri_02.mp3" type="audio/mpeg">
-              Your browser does not support the audio tag.
-            </audio>
-        </td>
-        <td>
-            <audio controls>
-              <source src="resources_audio/studenti_02.mp3" type="audio/mpeg">
-              Your browser does not support the audio tag.
-            </audio>
-        </td>
-      </tr>
-      <!-- linia 4 -->
-      <tr>
-        <td>
-            <audio controls>
-              <source src="resources_audio/parteneri_03.mp3" type="audio/mpeg">
-              Your browser does not support the audio tag.
-            </audio>
-        </td>
-        <td>
-            <audio controls>
-              <source src="resources_audio/studenti_03.mp3" type="audio/mpeg">
-              Your browser does not support the audio tag.
-            </audio>
-        </td>
-      </tr>
-      <!-- linia 5 -->
-      <tr>
-        <td>
-        </td>
-        <td>
-            <audio controls>
-              <source src="resources_audio/studenti_04.mp3" type="audio/mpeg">
-              Your browser does not support the audio tag.
-            </audio>
-        </td>
-      </tr>
-    </table>
-</div>
-
-  <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-7 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">User Profiles</span>
-  </div>
-</div>
-
-<div class="w3-container w3-padding-64">
-    <h2>1. Classic marketing</h2>
+<div class="w3-content w3-container w3-padding-64 container2-cut">
+  <p class="milestone">Milestone 4</p>
+  <h2>Interviews</h2>
+  <table  class="w3-table">
+    <!-- Aici e titlul/intrare pe linie in coloana -->
+  <tr>
+    <th>Parteneri</th>
+    <th>Clienti</th>
+  </tr>
+  <!-- linia 2 -->
+  <tr>
+    <td>
+        <audio controls>
+          <source src="resources_audio/parteneri_01.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+    </td>
+    <td>
+        <audio controls>
+          <source src="resources_audio/studenti_01.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+    </td>
+  </tr>
+  <!-- linia 3 -->
+  <tr>
+    <td>
+        <audio controls>
+          <source src="resources_audio/parteneri_02.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+    </td>
+    <td>
+        <audio controls>
+          <source src="resources_audio/studenti_02.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+    </td>
+  </tr>
+  <!-- linia 4 -->
+  <tr>
+    <td>
+        <audio controls>
+          <source src="resources_audio/parteneri_03.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+    </td>
+    <td>
+        <audio controls>
+          <source src="resources_audio/studenti_03.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+    </td>
+  </tr>
+  <!-- linia 5 -->
+  <tr>
+    <td>
+    </td>
+    <td>
+        <audio controls>
+          <source src="resources_audio/studenti_04.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+    </td>
+  </tr>
+</table>
+    <h3>1. Classic marketing</h3>
     <table class="w3-table">
         <!-- linia 0 -->
         <tr>
@@ -818,6 +817,7 @@ li + li {
           <th><p style="font-weight: bold;">Needs</p></th>
           <th><p style="font-weight: bold;">Problems</p></th>
         </tr>
+        
         <!-- linia 1 -->
         <tr>
           <th><li>Beauty Salon</li></th>
@@ -847,10 +847,9 @@ li + li {
           <th></th>
         </tr>
     </table>
-</div>
 
-<div class="w3-container w3-padding-64">
-    <h2>2. Online marketing</h2>
+
+    <h3>2. Online marketing</h2>
     <table class="w3-table">
         <!-- linia 0 -->
         <tr>
@@ -881,10 +880,8 @@ li + li {
           <th></th>
         </tr>
     </table>
-</div>
 
-<div class="w3-container w3-padding-64">
-    <h2>3. Student01</h2>
+    <h3>3. Student01</h3>
     <table class="w3-table">
         <!-- linia 0 -->
         <tr>
@@ -922,10 +919,9 @@ li + li {
           <th></th>
         </tr>
     </table>
-</div>
 
-<div class="w3-container w3-padding-64">
-    <h2>4. Student02</h2>
+
+    <h3>4. Student02</h3>
     <table class="w3-table">
         <!-- linia 0 -->
         <tr>
@@ -963,10 +959,8 @@ li + li {
           <th></th>
         </tr>
     </table>
-</div>
 
-<div class="w3-container w3-padding-64">
-    <h2>5. Employee01</h2>
+    <h3>5. Employee01</h3>
     <table class="w3-table">
         <!-- linia 0 -->
         <tr>
@@ -1004,9 +998,8 @@ li + li {
           <th></th>
         </tr>
     </table>
-</div>
-<div class="w3-container w3-padding-64">
-    <h2>6. Employee02</h2>
+
+    <h3>6. Employee02</h3>
     <table class="w3-table">
         <!-- linia 0 -->
         <tr>
@@ -1044,57 +1037,39 @@ li + li {
           <th></th>
         </tr>
     </table>
-</div>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-7 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Use Cases/User Flows</span>
-  </div>
-</div>
 
-<!-- USE CASES -->
-<div class="w3-container w3-center w3-padding-64">
+    <h2>Use Cases and New Wireframe</h2>
+
     <div class="gallery">
       <a target="_blank" href="resources/partner_flow.png">
         <img src="resources/partner_flow.png" alt="partner flow" width="600" height="400">
       </a>
-      <div class="desc">Partner Flow. Click to zoom in</div>
+      <div class="desc">Partner Flow. Click to view</div>
     </div>
 
     <div class="gallery">
       <a target="_blank" href="resources/partner_use_case.png">
         <img src="resources/partner_use_case.png" alt="partner use case" width="600" height="400">
       </a>
-      <div class="desc">Partner Use Case. Click to zoom in</div>
+      <div class="desc">Partner Use Case. Click to view</div>
     </div>
 
     <div class="gallery">
       <a target="_blank" href="resources/client_flow.png">
         <img src="resources/client_flow.png" alt="client flow" width="600" height="400">
       </a>
-      <div class="desc">Client Flow. Click to zoom in</div>
+      <div class="desc">Client Flow. Click to view.</div>
     </div>
 
     <div class="gallery">
       <a target="_blank" href="resources/client_use_case.png">
         <img src="resources/client_use_case.png" alt="client use case" width="600" height="400">
       </a>
-      <div class="desc">Client Use Case. Click to zoom in</div>
+      <div class="desc">Client Use Case. Click to view</div>
     </div>
-</div>
 
 
-  <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-5 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">New Wireframe</span>
-  </div>
-</div>
-
-<div class="w3-content w3-container w3-padding-64" id="wireframe">
-  <!-- <p class="w3-center"><em>I love photography</em></p> -->
-  <h3 class="heading1">New Wireframe</h3>
   <div class="row">
     <div class="column_wireframe">
       <p></p>
@@ -1130,15 +1105,13 @@ li + li {
       <img src="./resources/new_signin.png" alt="dresses_suits">
   </div>
 </div>
+</div>
   
 <!-- Leading -->
-<div class="bgimg-5 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Lead generation and collection</span>
-  </div>
-</div>
+
     
-<div class="w3-content w3-container w3-padding-64" id="leading">
+<div class="w3-content w3-container w3-padding-64 container2-cut" id="leading">
+  <p class="milestone">Milestone 5</p>
    <h3 class="heading1">Lead generation and collection</h3>
     <h4>1. Landing page update</h4>
     
@@ -1201,43 +1174,37 @@ li + li {
     
 </div>
 
-<!-- Market share -->
-<div class="bgimg-8 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">Market share</span>
-  </div>
-</div>
 
-<div class="w3-container">
+<div class="w3-content w3-container w3-padding-64 container2-cut">
+  <p class="milestone">Milestone 6</p>
+  <i class="fa fa-exclamation-triangle disclaimer" aria-hidden="true"></i>
   <h2>Our clients are</h2>
-  <div class="w3-padding-32 w3-light-grey w3-circle">
-    <div class="w3-padding-32 w3-pale-blue w3-circle w3-center" style="width:55%">
+  <div class="w3-padding-32 w3-circle" style="background-color: #FEEAE6">
+    <div class="w3-padding-32 w3-white w3-circle w3-center" style="width:55%">
       <p class="w3-xlarge w3-center">Salons</p>
     </div>
     <p class="w3-xlarge w3-center">Actual customers who<br>want to prepare themselves for<br>a festivity</p>
   </div>
-</div>
+
 
 <br><br><br>
 
-<div class="w3-container">
   <h2>The total number of targeted customers in Romania</h2>
   
   <p>Total customers with age between 18-24 years old</p>
-  <div class="w3-light-grey w3-round-large">
-    <div class="w3-container w3-blue w3-round-large" style="width:90%">1.7 million</div>
+  <div class="w3-round-large" style="background-color: #FEEAE6;">
+    <div class="w3-container w3-round-large" style="width:90%; background-color: #FEDBD0;">1.7 million</div>
   </div><br>
 
   <p>The number of salons in Romania</p>
-  <div class="w3-light-grey w3-round-large">
-    <div class="w3-container w3-blue w3-round-large" style="width:10%">15.678</div>
-</div>
+  <div class="w3-round-large" style="background-color: #FEEAE6;">
+    <div class="w3-container w3-round-large" style="width:10%; background-color: #FEDBD0">15.678</div>
+  </div>
 
-<div class="w3-content w3-container w3-padding-64" id="leading">
-    <h3><b>The penetration rate is calculated depending on how critical (if it is a must have
+    <p><b>The penetration rate is calculated depending on how critical (if it is a must have
 and a lot of people cannot live without it) this app
 can be at the moment. This application is more for a specialized purpose so it is
-going to have a low rate.</b></h3><br>
+going to have a low rate.</b></p><br>
     <p>In our case we will suppose that the penetration rate = 45%.<br><br>
 To calculate the market value, it is necessary to calculate the market volume.<br><br>
 Market value = Market volume * average value<br><br>
@@ -1247,127 +1214,77 @@ Number of targeted customers = 1.7 million + 15678 = 1,715,678<br><br>
 Market volume = (1,715,678 * 45)/100 = 772,055<br><br>
 Market value = 772,055 * 2.23 = 1,72 million
 </p>
-</div>
 
-<div class="w3-content w3-container w3-padding-64" id="leading">
-    <h3><b>Competition</b></h3><br>
+    <h2>Competition</h2><br>
     <p>
 PromGirl total annual revenue = <strong>19,4 million</strong><br><br>
 MGNevents total annual revenue = <strong>9,8 million</strong><br><br>
 </p>
+  <h3><b>Revenue</b></h3><br>
+  <p>
+  Industries revenue total year = Promgirl + mgnevents = 19,4 million + 9,8 million = 29,2 million<br><br>
+
+  For the first half year the application will be free for everyone to see how many people would really use this app. If there is a high number of people and the application will be a success then the application will cost near as 2.23$. For the first year using only for a half year, then the tax for the app will be 2.23/2 = 1.11$.<br><br>
+
+  Total year 1 revenue = Advertisements + Application<br>
+  Advertisements = 720$<br>
+  Application = 860,000$<br>
+  Year1 = 720$ + 860,000$ = 860,720<br><br>
+
+  Total year 2 revenue = Advertisements + Application<br>
+  Advertisements = 7,200$<br>
+  Application = 2,23 million $<br>
+  Year2 = 7,200$ + 2,23 million $ = 2,24 million $<br><br>
+
+  As our application willl grow and will not only be used for high school festivities preparations, but also for weddings, christenings, etc. So, the customers segments will be 18-50 years old.<br>
+  So, the number of targeted customers will be as 12,238,715 million.<br><br>
+
+  Total year 3 revenue = Advertisements + Application <br>
+  Advertisements = 20,070$<br>
+  Application = 6,02 million $<br>
+  Year3 = 20,070$ + 6,02 million $ = 6,04 million $<br><br>
+
+  So, it can be seen in the third year is a high growth.<br><br>
+
+  Total year 4 revenue = Advertisements + Application <br>
+  Advertisements = 24,084$<br>
+  Application = 9,34 million $<br>
+  Year4 = 24,084$ + 9,34 million $ = 9,36 million $<br><br>
+
+  Total year 5 revenue = Advertisements + Application <br>
+  Advertisements = 36,126$<br>
+  Application = 12,21 million $<br>
+  Year5 = 36,126$ + 12,21 million $ = 12,24 million $<br><br>
+
+  Total revenue for 5 years = 30,740,000 $<br>
+  Total average revenue for 5 years = 6,148,000 $<br><br>
+
+  Market share for promgirl = 19,4 million / (9,8 million + 6,148,000) = 19,4 million / 15,948,000 = 1.21%<br>
+  Market share for mgnevents = 9,8 million / (19,4 million + 6,148,000) = 9,8 million / 25,548,000 = 0.38%<br><br>
+
+  Our firm:<br>
+  Market share 1 year = 860,720 / 29,2 million = 0.03%<br>
+  Market share 2 year = 2,24 million / 29,2 million = 0.08%<br>
+  Market share 3 year = 6,04 million / 29,2 million = 0.20%<br>
+  Market share 4 year = 9,36 million / 29,2 million = 0.32%<br>
+  Market share 5 year = 12,24 million / 29,2 million = 0.41%<br><br>
+
+  Market value 1 year = 860,000<br>
+  Market value 2 year = 2,23 million<br>
+  Market value 3 year = 6,02 million<br>
+  Market value 4 year = 9,34 million<br>
+  Market value 5 year = 12,21 million<br><br>
+
+  Total market value for 5 years = 30,66 million $<br>
+  Total market average value for 5 years = 6,13 million $<br><br>
+
+  Total market share value for 5 years = 1.04%<br>
+  Total market share average value for 5 years = 0.2%<br>
+  </p>
+
+  <p><b>In conclusion, as can be observed from the above calculations, our business is profitable and is in further developing.</b></p>
+
 </div>
-
-<div class="w3-content w3-container w3-padding-64" id="leading">
-    <h3><b>Revenue</b></h3><br>
-    <p>
-Industries revenue total year = Promgirl + mgnevents = 19,4 million + 9,8 million = 29,2 million<br><br>
-
-For the first half year the application will be free for everyone to see how many people would really use this app. If there is a high number of people and the application will be a success then the application will cost near as 2.23$. For the first year using only for a half year, then the tax for the app will be 2.23/2 = 1.11$.<br><br>
-
-Total year 1 revenue = Advertisements + Application<br>
-Advertisements = 720$<br>
-Application = 860,000$<br>
-Year1 = 720$ + 860,000$ = 860,720<br><br>
-
-Total year 2 revenue = Advertisements + Application<br>
-Advertisements = 7,200$<br>
-Application = 2,23 million $<br>
-Year2 = 7,200$ + 2,23 million $ = 2,24 million $<br><br>
-
-As our application willl grow and will not only be used for high school festivities preparations, but also for weddings, christenings, etc. So, the customers segments will be 18-50 years old.<br>
-So, the number of targeted customers will be as 12,238,715 million.<br><br>
-
-Total year 3 revenue = Advertisements + Application <br>
-Advertisements = 20,070$<br>
-Application = 6,02 million $<br>
-Year3 = 20,070$ + 6,02 million $ = 6,04 million $<br><br>
-
-So, it can be seen in the third year is a high growth.<br><br>
-
-Total year 4 revenue = Advertisements + Application <br>
-Advertisements = 24,084$<br>
-Application = 9,34 million $<br>
-Year4 = 24,084$ + 9,34 million $ = 9,36 million $<br><br>
-
-Total year 5 revenue = Advertisements + Application <br>
-Advertisements = 36,126$<br>
-Application = 12,21 million $<br>
-Year5 = 36,126$ + 12,21 million $ = 12,24 million $<br><br>
-
-Total revenue for 5 years = 30,740,000 $<br>
-Total average revenue for 5 years = 6,148,000 $<br><br>
-
-Market share for promgirl = 19,4 million / (9,8 million + 6,148,000) = 19,4 million / 15,948,000 = 1.21%<br>
-Market share for mgnevents = 9,8 million / (19,4 million + 6,148,000) = 9,8 million / 25,548,000 = 0.38%<br><br>
-
-Our firm:<br>
-Market share 1 year = 860,720 / 29,2 million = 0.03%<br>
-Market share 2 year = 2,24 million / 29,2 million = 0.08%<br>
-Market share 3 year = 6,04 million / 29,2 million = 0.20%<br>
-Market share 4 year = 9,36 million / 29,2 million = 0.32%<br>
-Market share 5 year = 12,24 million / 29,2 million = 0.41%<br><br>
-
-Market value 1 year = 860,000<br>
-Market value 2 year = 2,23 million<br>
-Market value 3 year = 6,02 million<br>
-Market value 4 year = 9,34 million<br>
-Market value 5 year = 12,21 million<br><br>
-
-Total market value for 5 years = 30,66 million $<br>
-Total market average value for 5 years = 6,13 million $<br><br>
-
-Total market share value for 5 years = 1.04%<br>
-Total market share average value for 5 years = 0.2%<br>
-</p>
-
-    <h3><b>In conclusion, as can be observed from the above calculations is that our business is profitable and is in further developing.</b></h3>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black ">
-    <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-        <!-- <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%"> -->
-        </div>
-        <div class="w3-col">
-        <div class="w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bucharest, Romania<br>
-            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +407 22322322<br>
-            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: prom_box@gmail.com<br>
-        </div>
-        </div>
-    </div>
-  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 
 </body>
 </html>
